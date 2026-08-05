@@ -81,7 +81,7 @@ The installed version is **`next@16.2.12`** with **`react@19.2.4`** — both new
 
 - **No `src/` folder** — `app/`, `components/`, `lib/` sit directly in the project root
 - **tsconfig path alias**: `@/*` maps to project root `./*`, so new layers don't need config changes
-- **Routes**: Single route only — `app/page.tsx` is the only page; `app/loading.tsx`, `app/error.tsx`, `app/not-found.tsx` are convention files (not additional routes).
+- **Routes**: `app/page.tsx` (홈), `app/login/page.tsx` (로그인), and additional route-specific subdirectories as needed; `app/loading.tsx`, `app/error.tsx`, `app/not-found.tsx` are convention files (not additional routes).
 - **Environment**: `.env` and `.env.example` files exist at project root for configuration.
 - **CSS in** `app/globals.css` with Tailwind v4 + CSS variables + dark mode support
 
